@@ -1,0 +1,313 @@
+
+Admin@DESKTOP-HGNLPEA MINGW64 ~ (mas
+$ cd D:\;
+bash: cd: D:;: No such file or direc
+
+Admin@DESKTOP-HGNLPEA MINGW64 ~ (mas
+$ cd D:\
+> ;
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d
+$ mkdir ProjectB
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d
+$ ls
+'$RECYCLE.BIN'/
+'New folder'/
+ Proj/
+ ProjectA/
+ ProjectB/
+'System Volume Information'/
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d
+$ cd ProjectB
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectB
+$ git init
+Initialized empty Git repository in
+D:/ProjectB/.git/
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectB (master)
+$ git clone https://github.com/Prasannakumar1/ThirdB.git
+Cloning into 'ThirdB'...
+remote: Enumerating objects: 3, done
+.
+remote: Counting objects: 100% (3/3)
+, done.
+remote: Total 3 (delta 0), reused 0
+(delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectB (master)
+$ ls
+ThirdB/
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectB (master)
+$ cd ThirdB
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectB/ThirdB (main)
+git config --global user.name "Prasannnakumar1"
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectB/ThirdB (main)
+git config --global user.email "pkshivaraddi@gmail.com"
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectB/ThirdB (main)
+$ ls
+README.md
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectB/ThirdB (main)
+$ git status
+On branch main
+Your branch is up to date with 'orig
+in/main'.
+
+nothing to commit, working tree clea
+n
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectB/ThirdB (main)
+$ vi ds.txt
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectB/ThirdB (main)
+$ ls
+README.md  ds.txt
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectB/ThirdB (main)
+$ git status
+On branch main
+Your branch is up to date with 'orig
+in/main'.
+
+Untracked files:
+  (use "git add <file>..." to includ
+e in what will be committed)
+        ds.txt
+
+nothing added to commit but untracke
+d files present (use "git add" to tr
+ack)
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectB/ThirdB (main)
+$ git add ds.txt
+warning: in the working copy of 'ds.
+txt', LF will be replaced by CRLF th
+e next time Git touches it
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectB/ThirdB (main)
+$ git status
+On branch main
+Your branch is up to date with 'orig
+in/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>.
+.." to unstage)
+        new file:   ds.txt
+
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectB/ThirdB (main)
+$ git commit -m "data structure st"
+[main 2dc3671] data structure st
+ 1 file changed, 2 insertions(+)
+ create mode 100644 ds.txt
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectB/ThirdB (main)
+$ git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 6 thre
+ads
+Compressing objects: 100% (2/2), don
+e.
+Writing objects: 100% (3/3), 298 byt
+es | 298.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0
+), pack-reused 0 (from 0)
+To https://github.com/Prasannakumar1
+/ThirdB.git
+   fba5353..2dc3671  main -> main
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectB/ThirdB (main)
+$ git branch
+* main
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectB/ThirdB (main)
+$ git branch b1
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectB/ThirdB (main)
+$ git branch b2
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectB/ThirdB (main)
+$ git branch
+  b1
+  b2
+* main
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectB/ThirdB (main)
+$ git checkout b1
+Switched to branch 'b1'
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectB/ThirdB (b1)
+$ touch add2.c
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectB/ThirdB (b1)
+$ touch sub2.c
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectB/ThirdB (b1)
+$ git status
+On branch b1
+Untracked files:
+  (use "git add <file>..." to includ
+e in what will be committed)
+        add2.c
+        sub2.c
+
+nothing added to commit but untracke
+d files present (use "git add" to tr
+ack)
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectB/ThirdB (b1)
+$ git checkout b2
+Switched to branch 'b2'
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectB/ThirdB (b2)
+$ touch mul2.c
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectB/ThirdB (b2)
+$ touch div2.c
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectB/ThirdB (b2)
+$ touch square.c
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectB/ThirdB (b2)
+$ git add .
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectB/ThirdB (b2)
+$ git status
+On branch b2
+Changes to be committed:
+  (use "git restore --staged <file>.
+.." to unstage)
+        new file:   add2.c
+        new file:   div2.c
+        new file:   mul2.c
+        new file:   square.c
+        new file:   sub2.c
+
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectB/ThirdB (b2)
+$ git merge b1
+Already up to date.
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectB/ThirdB (b2)
+$ ls
+README.md  div2.c  mul2.c    sub2.c
+add2.c     ds.txt  square.c
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectB/ThirdB (b2)
+$ git branch -- merged
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectB/ThirdB (b2)
+$ git checkout b1
+A       add2.c
+A       div2.c
+A       mul2.c
+A       square.c
+A       sub2.c
+Switched to branch 'b1'
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectB/ThirdB (b1)
+$ ls
+README.md  div2.c  mul2.c    sub2.c
+add2.c     ds.txt  square.c
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectB/ThirdB (b1)
+$ git commit -m "We merged 5 files b1 & b2"
+[b1 4eda4a5] We merged 5 files b1 &
+b2
+ 5 files changed, 0 insertions(+), 0
+ deletions(-)
+ create mode 100644 add2.c
+ create mode 100644 div2.c
+ create mode 100644 mul2.c
+ create mode 100644 square.c
+ create mode 100644 sub2.c
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectB/ThirdB (b1)
+$ git branch
+* b1
+  b2
+  main
+  merged
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectB/ThirdB (b1)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'orig
+in/main'.
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectB/ThirdB (main)
+$ ls
+README.md  ds.txt
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectB/ThirdB (main)
+$ git merge b1
+Updating 2dc3671..4eda4a5
+Fast-forward
+ add2.c   | 0
+ div2.c   | 0
+ mul2.c   | 0
+ square.c | 0
+ sub2.c   | 0
+ 5 files changed, 0 insertions(+), 0
+ deletions(-)
+ create mode 100644 add2.c
+ create mode 100644 div2.c
+ create mode 100644 mul2.c
+ create mode 100644 square.c
+ create mode 100644 sub2.c
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectB/ThirdB (main)
+$ ls
+README.md  div2.c  mul2.c    sub2.c
+add2.c     ds.txt  square.c
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectB/ThirdB (main)
+$ git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 6 thre
+ads
+Compressing objects: 100% (2/2), don
+e.
+Writing objects: 100% (3/3), 344 byt
+es | 344.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0
+), pack-reused 0 (from 0)
+To https://github.com/Prasannakumar1
+/ThirdB.git
+   2dc3671..4eda4a5  main -> main
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectB/ThirdB (main)
+$ git branch b3
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectB/ThirdB (main)
+$ git branch
+  b1
+  b2
+  b3
+* main
+  merged
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectB/ThirdB (main)
+$ git branch -d b3
+Deleted branch b3 (was 4eda4a5).
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectB/ThirdB (main)
+$ git branch
+  b1
+  b2
+* main
+  merged
+
+Admin@DESKTOP-HGNLPEA MINGW64 /d/ProjectB/ThirdB (main)
+$
